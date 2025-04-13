@@ -30,8 +30,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: SSH to Server
-       uses:  appleboy/ssh-action@v1.0.3
-       with: 
+        uses:  appleboy/ssh-action@v1.0.3
+        with: 
           host: 44.223.15.200
           username: ec2-user
           key: ${{secrets.KEY}}
